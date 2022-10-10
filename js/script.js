@@ -20,6 +20,6 @@ document.querySelector("#login").addEventListener('submit', (event) => {
                 return;
             }
             sessionStorage.setItem('token', result.token);
-            window.location = "weather.html";
+            window.location = "/pages/weather.html";
         }).catch(error => console.log(error));
 });
