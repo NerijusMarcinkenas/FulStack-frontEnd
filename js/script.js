@@ -19,7 +19,8 @@ document.querySelector("#login").addEventListener('submit', (event) => {
                 alert(result.errorMessage);
                 return;
             }
+
             sessionStorage.setItem('token', result.token);
-            window.location = "/pages/weather.html";
+            window.location = "weather.html";
         }).catch(error => console.log(error));
 });

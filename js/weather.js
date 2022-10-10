@@ -5,7 +5,7 @@ if (!token) {
     window.location = "index.html";
 }
 else {
-    fetch("https://nerijausfullstackdemoapi.azurewebsites.netWeatherForecast", {
+    fetch("https://nerijausfullstackdemoapi.azurewebsites.net/WeatherForecast", {
         method: 'GET',
         headers: {
             'Authorization': 'Bearer ' + token
