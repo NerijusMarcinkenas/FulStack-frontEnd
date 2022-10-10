@@ -6,7 +6,7 @@ document.querySelector("#login").addEventListener('submit', (event) => {
         password: event.target.password.value
     };
 
-    fetch("https://localhost:7004/api/Auth/Login", {
+    fetch("https://nerijausfullstackdemoapi.azurewebsites.net/api/Auth/Login", {
         method: 'POST',
         headers: {
             "Content-type": "application/json"
